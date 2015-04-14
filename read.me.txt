@@ -1,0 +1,58 @@
+///////////////////////////////////////////////////////////////////////////////////////////////
+/////											///////
+/////		Assignment 2								///////			
+///////////////////////////////////////////////////////////////////////////////////////////////		
+
+Progrma is made on laptop running VMware ubuntu 12.
+
+
+
+Instructions for PART -1 
+
+-> assign2  is source file
+-> It includes header files as follow
+
+#include <unistd.h>
+#include <sys/types.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <fcntl.h>
+#include <linux/input.h>
+#include <string.h>
+#include <sys/time.h>
+#include <errno.h>
+#include <time.h>
+#include <math.h>
+
+
+-> File discriptor has to be given proper location: Change location accordoing to your input file location on you PC
+
+	fr = fopen ("/home/esp/Desktop/input2.txt", "rt"); 	#include <stdbool.h>
+
+
+-> RUN file with this command as it is written in C:
+
+      gcc assign2.c -o assign2 -lm
+
+
+PART -2
+
+
+=>     file name is part2
+
+use the same command 
+       gcc part2.c -o part -lm
+
+////////////////////////////////////////////////////////////////////////////////////
+
+Due to time constraints, I couldn't implement fully automated program
+
+*************so please change value for 12 , 24 , 48 manually by changing variable " number_of_task = 12"
+
+*************for deadline = [Ci, Ti]                                use deadline_flag = 0
+*************for deadline = [Ci*(Ti-Ci)/2, Ti]                      use deadline_flag = 1;
+
+
+logic is implemented in "deadline_funct" function.
+ 
